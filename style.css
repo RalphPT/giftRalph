@@ -14,14 +14,18 @@ h1{
   display: flex;
   margin-top: 90px;
 }
+.ab{
+  margin-top: -5px;
+}
 
 .night {
 
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  /*align-items: center;*/
+   /* Centra horizontalmente */
+  align-items: center;
   width: 100vw; /* Ajusta la altura al 100% del viewport */
   animation: fadeIn 2s ease forwards; /* Animación de fade in */
+  flex-direction: column;
 }
 @keyframes fadeIn {
   0% {
