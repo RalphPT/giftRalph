@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
+  
   <meta charset="UTF-8">
+  <audio autoplay>
+    <source src="music/Jardín - Como Nadie (Official Video).mp3" type="audio/mpeg">
+  </audio>
   <title>Flores y corazones</title>
   <link rel="stylesheet" href="./style.css">
+
 </head>
-<audio autoplay>
-  <source src="music/Jardín - Como Nadie (Official Video).mp3" type="audio/mpeg">
-</audio>
 <body>
+  <script>
+    // Solicitar permiso para acceder al audio
+    navigator.mediaDevices.getUserMedia({ audio: true })
+      .then(function(stream) {
+        console.log('Permiso para acceder al audio concedido');
+        // Aquí puedes agregar la lógica para reproducir el sonido
+      })
+      .catch(function(err) {
+        console.error('No se pudo permitir el acceso al audio:', err);
+      });
+    </script>
 <!-- partial:index.partial.html -->
 <body class="container">
   <div class="night"><h1 class="floating-text">¡Feliz San Valentin, Bonita Gery!</h1></div>
