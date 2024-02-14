@@ -9,7 +9,46 @@
 :root {
   --dark-color: #010113;
 }
+h1{
+  color: white;
+  display: flex;
+  margin-top: 50px;
+}
 
+.night {
+
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  /*align-items: center;*/
+  width: 100vw; /* Ajusta la altura al 100% del viewport */
+  animation: fadeIn 2s ease forwards; /* Animación de fade in */
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Opacidad inicial */
+  }
+  100% {
+    opacity: 1; /* Opacidad final */
+  }
+}
+.floating-text {
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.floating-text {
+  animation: float 3s ease-in-out infinite;
+}
 body {
   display: flex;
   align-items: flex-end;
