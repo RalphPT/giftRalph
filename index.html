@@ -11,17 +11,6 @@
 
 </head>
 <body>
-  <script>
-    // Solicitar permiso para acceder al audio
-    navigator.mediaDevices.getUserMedia({ audio: true })
-      .then(function(stream) {
-        console.log('Permiso para acceder al audio concedido');
-        // Aquí puedes agregar la lógica para reproducir el sonido
-      })
-      .catch(function(err) {
-        console.error('No se pudo permitir el acceso al audio:', err);
-      });
-    </script>
 <!-- partial:index.partial.html -->
 <body class="container">
   <div class="night"><h1 class="floating-text">¡Feliz San Valentin, Bonita Gery!</h1></div>
